@@ -6,7 +6,7 @@ import userRouter from './routes/userRouter.js';
 
 const app = express();
 
-mongoose.connect("mongodb+srv://admin:1234@cicd.peldgzz.mongodb.net/?retryWrites=true&w=majority&appName=CICD").then(
+mongoose.connect(process.env.MONGODB_URL).then(
     () => {
         console.log("Connected to the database");
     }
