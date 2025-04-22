@@ -1,4 +1,4 @@
-name: index.js CI
+name: node.js test
 on:
   push:
   pull_request:
