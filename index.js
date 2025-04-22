@@ -17,8 +17,6 @@ mongoose.connect("mongodb+srv://admin:1234@cicd.peldgzz.mongodb.net/?retryWrites
 )
 
 
-
-
 app.use(bodyParser.json());
 
 app.use("/api/user", userRouter)
